@@ -1,32 +1,141 @@
-.App {
-  text-align: center;
+
+.jumbotronHeading {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 60px
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.homeNavbar {
+    position: absolute;
+    width: 100%;
+    
+    height: 82px;
+    top: 0px;
+    left: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.homeNavbar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.homeNavbar div img {
+    width: 260px;
 }
 
-.App-link {
-  color: #61dafb;
+.blueJumbotron {
+    flex: 2;
+    
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #009ECC, #2BFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #009ECC, #2BFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.blueJumbotron div {
+    padding: 100px;
+}
+
+.blueJumbotron div h1{
+    font-size: 84px;
+    font-family: Raleway, sans-serif;
+    color: #fdfdfd;
+}
+
+
+
+.backgroundImage {
+    flex: 1.3;
+    background-image: url('https://images.unsplash.com/photo-1537069562298-f7416f8a60f0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bdbb0d0937fcc60080b6c44af9ff1b84&auto=format&fit=crop&w=934&q=80');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.white-button {
+    height: 65px;
+    border-radius: 50px;
+    color: rgb(14, 191, 223);
+    font-weight: 700;
+    background-color: white;
+    border-width: 0px;
+    font-size: 24px;
+    width: 250px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:focus {outline:0;}
+
+.white-button:hover {
+    box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1024px) {
+    .blueJumbotron div h1{
+        font-size: 70px;
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  @media screen and (max-width: 768px) {
+    .backgroundImage {
+        display: none;
+    }
+
   }
-}
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .backgroundImage {
+        display: none;
+    }
+
+    .blueJumbotron div {
+        padding: 30px;
+padding-top: 100px;
+    }
+
+    .blueJumbotron div h1{
+        font-size: 60px;
+    }
+    .homeNavbar div {
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .backgroundImage {
+        display: none;
+    }
+
+    .blueJumbotron div {
+        padding: 30px;
+padding-top: 100px;
+    }
+
+    .blueJumbotron div h1{
+        font-size: 50px;
+    }
+    .homeNavbar div {
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .homeNavbar div img {
+        width: 230px;
+    }
+  }
+
