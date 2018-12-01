@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './Process.css';
+import './Work.css'
 import logo from './assets/logo.svg';
 import WhiteButtom from './components/WhiteButton';
 
@@ -40,10 +41,37 @@ class App extends Component {
           // Process
         }
         <div className="process">
-          <h3>Our Approach</h3>
+          <h3>{"Our Approach".toUpperCase()}</h3>
           <h2>Here's how it works</h2>
-
+          <div className="process-diagram">
+            <div className="process-diagram-cards">
+              <div></div>
+              <h3>Step 1</h3>
+              <p>
+                Get Nazar and Imran on the project
+              </p>
+            </div>
+            <div className="process-diagram-cards">
+              <div></div>
+              <h3>Step 2</h3>
+              <p>
+                Use child labor
+              </p>
+            </div>
+            <div className="process-diagram-cards">
+              <div></div>
+              <h3>Step 3</h3>
+              <p>
+                Launch
+              </p>
+            </div>
+          </div>
         </div>
+        <div className="process work">
+          <h3>{"Our work".toUpperCase()}</h3>
+          <h2>See what we've made possible</h2>
+        </div>
+
       </div>
     );
   }
